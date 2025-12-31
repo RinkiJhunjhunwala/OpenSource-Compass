@@ -1,179 +1,257 @@
+﻿<div align="center">
 
-<div align="center">
+#  OpenSource Compass  
 
-# 🌍 OpenSource Compass  
-### *Navigate your Open Source journey with clarity.*
+### Navigate your Open Source journey with clarity.
 
 <img src="assets/swoc_banner.png" alt="OpenSource Compass Banner" width="100%"/>
 
+[![Open Source](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/sayeeg-11/OpenSource-Compass)
+[![GitHub Issues](https://img.shields.io/github/issues/sayeeg-11/OpenSource-Compass)](https://github.com/sayeeg-11/OpenSource-Compass/issues)
+[![GitHub License](https://img.shields.io/github/license/sayeeg-11/OpenSource-Compass)](LICENSE)
+
 </div>
 
 ---
 
-## 📌 About the Project
+## About the Project
 
-**OpenSource Compass** is a beginner-friendly, community-driven web platform designed to help students and first-time contributors confidently start their open-source journey.  
-
-The project provides structured guidance on:
-- Open source fundamentals  
-- Git & GitHub workflows  
-- Contribution best practices  
-- Common do’s and don’ts  
-- A centralized hub for ongoing and upcoming open-source programs  
-
-Built initially using **HTML, CSS, and JavaScript**, the platform focuses on simplicity, accessibility, and meaningful community contributions.
+OpenSource Compass is a website that helps beginners learn about open source. It teaches you how to contribute to open source projects, use Git and GitHub, and find programs that support new contributors.
 
 ---
 
-## 🎯 Project Objectives
+## Vision and Mission
 
-- Help beginners understand open source in a structured way  
-- Reduce confusion and common beginner mistakes  
-- Provide a single platform for open-source program information  
-- Encourage quality contributions and collaborative learning  
-- Create an easy-to-contribute project for newcomers  
+**Vision:** To give beginners a simple place to learn about open source contribution.
+
+**Mission:** To help new developers understand how to contribute and to make open source less confusing.
 
 ---
 
-## 🧩 Features
+## Key Features
 
-- 📘 Beginner-friendly Open Source guides  
-- ⚠️ Do’s and Don’ts for contributors  
-- 🛠 Step-by-step contribution workflow  
-- 🎥 Curated learning resources & videos  
-- 📅 Open Source Programs Hub (SWOC, GSSoC, GSoC, Hacktoberfest, etc.)  
-- 🤝 Community-driven content  
-
----
-
-## 🛠 Tech Stack
-
-- **HTML** – Structure  
-- **CSS** – Styling & responsiveness  
-- **JavaScript** – Interactivity  
-- **JSON** – Data handling (program listings, resources)
+- Complete guides for beginners
+- Dos and Donts for contributors  
+- Step-by-step contribution guide
+- Learning resources and videos
+- Information about open source programs like SWOC, GSSoC, and more
+- Community support and help
 
 ---
 
-## 📂 Project Structure
+## Tech Stack
 
-```
-
-OpenSource-Compass/
-│
-├── index.html
-├── guides/
-│   ├── open-source-basics.html
-│   ├── git-github.html
-│
-├── programs/
-│   ├── swoc.html
-│   ├── gssoc.html
-│
-├── resources/
-│   ├── videos.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── main.js
-│
-├── data/
-│   └── programs.json
-│
-├── assets/
-│   └── images/
-│
-└── README.md
-
-````
+- HTML5 for structure
+- CSS3 for styling
+- JavaScript for interactivity
+- JSON for data
 
 ---
 
-## 🚀 Getting Started
+## Project Structure
 
-1. **Fork** this repository  
-2. **Clone** your fork  
-   ```bash
-   git clone https://github.com/your-username/OpenSource-Compass.git
-
-3. Open `index.html` in your browser
-4. Start contributing 🎉
-
----
-
-## 🤝 Contribution Guidelines
-
-We welcome all kinds of contributions:
-
-* Improving UI/UX
-* Adding guides or resources
-* Updating open-source program details
-* Fixing bugs or improving documentation
-
-Before contributing:
-
-* Read `CONTRIBUTING.md`
-* Create meaningful PRs
-* Follow clean commit messages
-* Be respectful and collaborative
+project/
+ index.html
+ guides/
+ programs/
+ resources/
+ css/
+ js/
+ data/
+ assets/
+ README.md
 
 ---
 
-## 📌 Contribution Types
+## How to Get Started
 
-* 🟢 Beginner: Content updates, UI fixes
-* 🟡 Intermediate: New pages, JS features
-* 🔵 Advanced: Architecture improvements (future scope)
+### Step 1: Fork the Repository
+
+Click the Fork button on GitHub to create your own copy.
+
+### Step 2: Clone Your Fork
+
+bash
+git clone https://github.com/your-username/OpenSource-Compass.git
+cd OpenSource-Compass
+
+
+### Step 3: Open in Browser
+
+Open the index.html file in your web browser or use a local server.
+
+### Step 4: Make Changes and Contribute
+
+Edit files, test them, and create a pull request.
 
 ---
 
-## 🖼 Screenshots (Dummy)
+## How to Contribute
+
+### What You Can Do
+
+- Fix spelling and grammar mistakes
+- Improve the design and look
+- Add new guides and content
+- Report bugs
+- Share suggestions
+
+### Steps to Contribute
+
+1. Create a new branch
+   bash
+   git checkout -b feature/your-feature-name
+
+
+2. Make your changes
+
+3. Test your changes in the browser
+
+4. Save and commit your work
+   bash
+   git add .
+   git commit -m "Add your message here"
+
+
+5. Push your changes
+   bash
+   git push origin feature/your-feature-name
+
+
+6. Create a Pull Request on GitHub
+
+---
+
+## Contribution Rules
+
+### Good Things to Do
+
+- Ask questions if you don't understand something
+- Read the existing code first
+- Make small, focused changes
+- Write clear messages for your changes
+- Test everything before submitting
+
+### Things NOT to Do
+
+- Don't make very large changes all at once
+- Don't commit to the main branch directly
+- Don't ignore feedback from reviewers
+- Don't add unnecessary files
+- Don't force push changes
+
+---
+
+## Code of Conduct
+
+Be kind and respectful. We don't allow:
+- Mean or disrespectful behavior
+- Discrimination
+- Harassment
+- Hateful language
+
+Everyone should feel welcome here.
+
+---
+
+## Open Source Programs We Support
+
+- SWOC (Student Winter of Code) - Active
+- GSSoC (GirlScript Summer of Code) - Supported
+- GSoC (Google Summer of Code) - Coming Soon
+- Hacktoberfest - Supported
+
+Learn more about these programs on our website.
+
+---
+
+## Learning Resources
+
+### On Our Website
+
+- Getting Started with Open Source
+- Git and GitHub Guide
+- Community Programs
+- Video Tutorials
+- Articles and Tips
+
+### External Resources
+
+- GitHub Hello World tutorial
+- Git documentation
+- MDN Web Docs
+- Open Source guides
+
+---
+
+## Report Bugs or Issues
+
+Found a problem? Tell us!
+
+1. Check if someone already reported it
+2. Click "New Issue" on GitHub
+3. Write a clear title and description
+4. Add steps to reproduce the problem if you can
+
+---
+
+## Ideas for Contributions
+
+- Add guides for other programs
+- Improve the design
+- Make it work better on mobile
+- Add more videos
+- Translate to other languages
+- Add user stories and testimonials
+
+---
+
+## Future Plans
+
+We want to add:
+- Mobile app version
+- User accounts and profiles
+- Discussion forum
+- Progress dashboard
+- Achievement badges
+- Program notifications
+- Support for multiple languages
+
+---
+
+## Join Our Community
+
+- Star the repository if you like it
+- Fork and contribute
+- Share your feedback
+- Tell others about us
+
+---
+
+## License
+
+This project uses the MIT License. You can use, modify, and share it freely as long as you include the license.
+
+---
+
+## Thank You
+
+Thank you to everyone who contributes to this project. Every contribution makes it better for beginners everywhere.
+
+---
+
+## Need Help?
+
+- Open an issue on GitHub to ask questions
+- Check our guides for answers
+- Join our discussions
+
+---
 
 <div align="center">
-<img src="assets/home.png" width="45%" />
-<img src="assets/programs.png" width="45%" />
+
+Made with love for the Open Source Community
+
+If you find this helpful, please give it a star!
+
 </div>
-
----
-
-## 📜 Code of Conduct
-
-Please read and follow our **Code of Conduct** to maintain a respectful and inclusive community.
-
----
-
-## 🌱 Future Scope
-
-* Backend integration
-* Search & filters for programs
-* User profiles
-* Community blog & stories
-* Admin dashboard
-
----
-
-## 💙 Community & Support
-
-If you like this project:
-
-* ⭐ Star the repo
-* 🍴 Fork it
-* 🛠 Contribute
-* 📢 Share it with others
-
-Together, let’s make open source easier for everyone 🚀
-
----
-
-## 🏷 License
-
-This project is licensed under the **MIT License**.
-
----
-
-<div align="center">
-Made with ❤️ for the Open Source Community
-</div>
-
