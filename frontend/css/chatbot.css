@@ -1,13 +1,25 @@
 /* Import variables if not already available in scope, 
    though usually inherited from style.css */
 :root {
-    --primary-gold: #D4AF37;
-    --secondary-gold: #B8860B;
-    --deep-navy: #1B263B;
-    --warm-cream: #FDF4E3;
+    --chat-primary: #4D96FF;
+    --chat-bg: #fff;
+    --chat-text: #333;
+    --chat-user-msg-bg: #4D96FF;
+    --chat-user-msg-text: #fff;
+    --chat-bot-msg-bg: #f0f0f0;
+    --chat-bot-msg-text: #333;
+    --chat-width: 350px;
+    --chat-height: 450px;
 }
 
-/* 1. Floating Chat Button (The "Bubble") */
+body.dark-mode {
+    --chat-bg: #1e1e1e;
+    --chat-text: #fff;
+    --chat-bot-msg-bg: #2d2d2d;
+    --chat-bot-msg-text: #fff;
+}
+
+/* Floating Chat Button */
 .chat-widget-btn {
     position: fixed;
     bottom: 2rem;
@@ -21,9 +33,7 @@
     border: none;
     font-size: 1.8rem;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); /* Gold shadow */
-    z-index: 1000;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,25 +47,27 @@
 /* 2. Chat Window Container */
 .chat-window {
     position: fixed;
-    bottom: 6rem; /* Above the button */
-    right: 2rem;
-    width: 350px;
-    height: 500px;
-    background: white;
-    border-radius: 15px;
-    /* CHANGE: Added Gold Border */
-    border: 2px solid var(--primary-gold);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    display: none; /* Hidden by default */
+    bottom: 100px;
+    right: 30px;
+    width: var(--chat-width);
+    height: var(--chat-height);
+    background-color: var(--chat-bg);
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+    display: flex;
     flex-direction: column;
     overflow: hidden;
-    z-index: 1001;
-    font-family: 'Inter', sans-serif;
+    z-index: 999;
+    opacity: 0%;
+    transform: translateY(20px);
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .chat-window.active {
-    display: flex;
-    animation: slideUp 0.3s ease forwards;
+    opacity: 100%;
+    transform: translateY(0);
+    pointer-events: all;
 }
 
 @keyframes slideUp {
@@ -107,9 +119,11 @@
     padding: 0.8rem 1rem;
     border-radius: 12px;
     max-width: 80%;
-    line-height: 1.5;
-    font-size: 0.95rem;
-    word-wrap: break-word;
+    padding: 10px 14px;
+    border-radius: 18px;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-wrap: break-word;
 }
 
 .message.bot {
@@ -132,11 +146,14 @@
 
 /* 5. Input Area */
 .chat-input-area {
-    padding: 1rem;
-    background: white;
+    padding: 15px;
+    border-top: 1px solid rgb(0 0 0 / 10%);
     display: flex;
-    gap: 0.5rem;
-    border-top: 1px solid #eee;
+    gap: 10px;
+}
+
+body.dark-mode .chat-input-area {
+    border-top: 1px solid rgb(255 255 255 / 10%);
 }
 
 #chatInput {
