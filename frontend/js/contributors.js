@@ -392,7 +392,7 @@ function updateStats(list) {
 
   stats.innerHTML = `
     <span><strong>${total}</strong> contributors</span>
-    <span><strong>${humans}</strong> humans</span>
+    <span><strong>${humans}</strong> people</span>
     <span><strong>${mergedPRs}</strong> merged PRs</span>
     ${top ? `<span>🏆 Top: <strong>${top.login}</strong></span>` : ''}
   `;
